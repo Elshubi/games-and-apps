@@ -18,8 +18,8 @@ document.querySelector('.roll').addEventListener('click', function() {
     dice = Math.floor(Math.random() * 6 + 1);
     document.querySelector('.dice').style.display = 'block';
     document.querySelector('.dice').src= '/img/dice-' + dice + '.png';
-    active === 0 ? document.querySelector('.p1').classList.toggle('.activeplayer'): document.querySelector('.p2').classList.toggle('activeplayer');
-    active === 1 ? document.querySelector('.p2').classList.toggle('.activeplayer'): document.querySelector('.p1').classList.toggle('activeplayer');
+    document.querySelector('.p1').classList.toggle('.activeplayer')
+    document.querySelector('.p2').classList.toggle('.activeplayer')
     active === 0 ? p1score += dice : p2score += dice;
     
     active === 0 ? active = 1 : active = 0;

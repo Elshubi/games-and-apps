@@ -1,5 +1,5 @@
 body{
-    background-color: antiquewhite;
+    background-color: darkgrey;
 }
 
 .active{
@@ -25,8 +25,8 @@ body{
     float: left;
     font-family: sans-serif;
     width: 190px;
-    color: darkblue;
-    background-color: crimson;
+    color:black;
+    background-color: white;
     
 }
 
@@ -35,8 +35,8 @@ body{
     background-color: antiquewhite;
     font-family: sans-serif;
     width: 190px;
-    color: crimson;
-    background-color: darkblue;
+    color: white;
+    background-color: black;
 
 }
 
