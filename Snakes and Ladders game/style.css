@@ -1,0 +1,61 @@
+body{
+    background-color: antiquewhite;
+}
+
+.active{
+    background-color: brown;
+}
+.ng {
+    position: relative;
+    left:400px;
+    height: 26px;
+    background-color: #fff;
+    font-weight: 800;
+}
+.roll {
+    background-color: #fff;
+    font-weight: 800;
+}
+
+    .activeplayer{
+        font-weight: 800;
+    }
+
+.p1card {
+    float: left;
+    font-family: sans-serif;
+    width: 190px;
+    color: darkblue;
+    background-color: crimson;
+    
+}
+
+.p2card {
+    float: right;
+    background-color: antiquewhite;
+    font-family: sans-serif;
+    width: 190px;
+    color: crimson;
+    background-color: darkblue;
+
+}
+
+.dice{
+
+    height: 55px;
+    width: 55px;
+    display: none;
+    position: fixed;
+    left: 300px;
+
+}
+.gameboard {
+    float: none;
+    height: 480px;
+    width: 700px;
+    position: absolute;
+    left: 150px;
+    top: 42px;
+
+}
+
