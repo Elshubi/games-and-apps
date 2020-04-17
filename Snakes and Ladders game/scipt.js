@@ -18,11 +18,20 @@ document.querySelector('.roll').addEventListener('click', function() {
     dice = Math.floor(Math.random() * 6 + 1);
     document.querySelector('.dice').style.display = 'block';
     document.querySelector('.dice').src= '/img/dice-' + dice + '.png';
-    document.querySelector('.p1').classList.toggle('.activeplayer')
-    document.querySelector('.p2').classList.toggle('.activeplayer')
+    active === 0 ? document.querySelector('.p1card').classList.add('.activeplayer') : document.querySelector('.p2card').classList.add('.activeplayer');
     active === 0 ? p1score += dice : p2score += dice;
-    
     active === 0 ? active = 1 : active = 0;
+    if ( active === 1) {
+        document.querySelector('.p1playing').style.display = 'none';
+    } else {
+        document.querySelector('.p1playing').style.display = 'block';
+    };
+
+    if ( active === 0) {
+        document.querySelector('.p2playing').style.display = 'none';
+    } else {
+        document.querySelector('.p2playing').style.display = 'block';
+    }
      
     if (p1score === 2){
         p1score = 23;

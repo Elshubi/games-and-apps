@@ -2,9 +2,6 @@ body{
     background-color: darkgrey;
 }
 
-.active{
-    background-color: brown;
-}
 .ng {
     position: relative;
     left:400px;
@@ -19,8 +16,17 @@ body{
 
     .activeplayer{
         font-weight: 800;
+        color: slateblue;
     }
 
+.p1playing{
+    color: red;
+}
+
+    .p2playing {
+        display: none;
+        color: red;
+    }
 .p1card {
     float: left;
     font-family: sans-serif;
