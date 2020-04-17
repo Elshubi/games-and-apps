@@ -17,7 +17,7 @@ document.querySelector('.roll').addEventListener('click', function() {
 
     dice = Math.floor(Math.random() * 6 + 1);
     document.querySelector('.dice').style.display = 'block';
-    document.querySelector('.dice').src= '/img/dice-' + dice + '.png';
+    document.querySelector('.dice').src= 'img/dice-' + dice + '.png';
     active === 0 ? document.querySelector('.p1card').classList.add('.activeplayer') : document.querySelector('.p2card').classList.add('.activeplayer');
     active === 0 ? p1score += dice : p2score += dice;
     active === 0 ? active = 1 : active = 0;
@@ -88,6 +88,7 @@ document.querySelector('.roll').addEventListener('click', function() {
     if (p1score >= 100) {
         document.querySelector('.p1').textContent = 'WINNER!';
         document.querySelector('.roll').style.display = 'none';
+        document.querySelector('.dice').style.display = 'none';
 
     };
 
@@ -146,6 +147,7 @@ document.querySelector('.roll').addEventListener('click', function() {
     if (p2score >= 100) {
         document.querySelector('.p2').textContent = 'WINNER!';
         document.querySelector('.roll').style.display = 'none';
+        document.querySelector('.dice').style.display = 'none';
 
     };
     
